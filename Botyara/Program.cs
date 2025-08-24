@@ -19,6 +19,8 @@ namespace Botyara
         public static async Task Main()
         {
             var bot = new TelegramBotClient("8307985542:AAFJCGpnGzt1jO7gADeNHRQe-QaUcyQoO2g");
+            //bibos
+
             var me = await bot.GetMe();
            
             bot.StartReceiving(Update, Error);
@@ -50,7 +52,7 @@ namespace Botyara
             }
             if (message.Photo != null)
             {
-                await client.SendPhoto(ID, "https://drive.google.com/file/d/11tDZCwURJeOeAarhfvgEj5nfIaRkZQ3D/view?usp=drive_link"); 
+                await client.SendPhoto(ID, "https://telegrambots.github.io/book/docs/photo-ara.jpg"); 
                 return;
             }
             if (message.Sticker != null) 
